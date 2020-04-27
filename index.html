@@ -12,7 +12,7 @@
 
 <body>
 <div class="jumbotron text-center">
-  <h1>Wikimedia</h1>
+  <h1>ESA Media</h1>
   <p>Find your resources below</p> 
 </div>
 
@@ -32,9 +32,6 @@
         </div>
 			
 		
-		<!--div class="col">
-		<a href="#news">Resources</a>
-		</div-->
 		<div class="col">
 		<a href="#contact">Contact</a>
 		</div>
@@ -53,7 +50,8 @@
 									this.responseText;
 								}
 							};
-							xhttp.open("GET", "ajax_info.txt", true);
+							var x = xhttp.open("GET", "https://nmqnwar6a6.execute-api.us-east-1.amazonaws.com/default/getServerless?resource=agile", true);
+							document.write(x)
 							xhttp.send();
 						}
 					</script>
@@ -74,15 +72,8 @@
 					<button type="button" class="btn btn-outline-secondary">User Stories</button>
 					<button type="button" class="btn btn-outline-success">Scrum</button>
 					<button type="button" class="btn btn-outline-info">MRP</button>
-					<button type="button" class="btn btn-outline-warning">PDM</button>
-					<button type="button" class="btn btn-outline-danger">Danger</button>
-					<button type="button" class="btn btn-outline-dark">Dark</button>
-					<button type="button" class="btn btn-outline-primary">Primary</button>
-					<button type="button" class="btn btn-outline-secondary">Secondary</button>
-					<button type="button" class="btn btn-outline-success">Success</button>
-					<button type="button" class="btn btn-outline-info">Info</button>
-					<button type="button" class="btn btn-outline-warning">Warning</button>
-					<button type="button" class="btn btn-outline-danger">Danger</button>
+			
+					
 				</div>
 			</div>
 			<div>
